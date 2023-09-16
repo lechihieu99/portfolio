@@ -1,0 +1,72 @@
+.scroller {
+    height: 3.2em;
+    line-height: 3.2em;
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    text-align: left;
+}
+.scroller > span {
+    text-align: left;
+    position: absolute;
+    top: 0;
+    animation: slide 10s infinite;
+    font-weight: bold;
+    font-size: 1.8rem; /* 96px */
+    line-height: 1.4em;
+}
+.iconDown {
+    animation: jump 1s infinite;
+    transition: ease-in-out;
+}
+
+@media (max-width: 600px) { 
+  .scroller {
+    height: 2em;
+    line-height: 2em;
+  }
+  .scroller > span {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    animation: slide 10s infinite;
+  }
+ }
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(0.5em);
+    }
+    50% {
+        transform: translateY(-0.5em);
+    }
+}
+  @keyframes slide {
+    5% {
+      top: 0;
+    }
+    20% {
+      top: -1.4em;
+    }
+    30% {
+      top: -1.4em;
+    }
+    45% {
+      top: -2.8em;
+    }
+    55% {
+      top: -2.8em;
+    }
+    70% {
+      top: -4.2em;
+    }
+    80% {
+      top: -4.2em;
+    }
+    95% {
+      top: 0;
+    }
+  }
+
+ 

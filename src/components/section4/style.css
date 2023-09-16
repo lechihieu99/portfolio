@@ -1,0 +1,111 @@
+.Btn {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    /* overflow: hidden; */
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .3s;
+    padding: 0;
+    z-index: 5;
+  }
+  
+  .svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all .3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+    z-index: 3;
+  }
+  
+  .BG {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    /* background: #181818; */
+    /* background: red; */
+    z-index: 1;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: all .3s;
+  }
+  
+  .Btn:hover .BG {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+  }
+  
+  .Btn:hover .svgContainer {
+    background-color: rgba(156, 156, 156, 0.466);
+    backdrop-filter: blur(4px);
+  }
+
+  .mobileNotActive1Section4 {
+    opacity: 0;
+  }
+  .mobileActive1Section4 {
+    opacity: 1;
+  }
+
+  .mobileNotActive2Section4 {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  .mobileActive2Section4 {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .mobileNotActive3Section4 {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  .mobileActive3Section4 {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .notActive1Section4 {
+    opacity: 0;
+  }
+  .active1Section4 {
+    opacity: 1;
+  }
+
+  .notActive2Section4 {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  .active2Section4 {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .notActive3Section4 {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  .active3Section4 {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  @media (max-width: 1080px) { 
+    .Btn {
+      width: 45px;
+      height: 45px;
+    }
+   }

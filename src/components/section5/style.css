@@ -1,0 +1,31 @@
+.mobileActive1Section5 {
+    opacity: 1;
+}
+.mobileNotActive1Section5 {
+    opacity: 0;
+}
+
+.mobileNotActive2Section5 {
+    opacity: 0;
+}
+.mobileActive2Section5 {
+    opacity: 1;
+}
+
+.notActive1Section5 {
+    opacity: 0;
+    transform: translateX(-100px);
+}
+.active1Section5 {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.notActive2Section5 {
+    opacity: 0;
+    transform: translateX(100px);
+}
+.active2Section5 {
+    opacity: 1;
+    transform: translateX(0);
+}

@@ -1,0 +1,9 @@
+.notActiveSection3 {
+    opacity: 0;
+    /* transform: translateY(50px); */
+  }
+  
+  .activeSection3 {
+    opacity: 1;
+    /* transform: translateY(0); */
+  }

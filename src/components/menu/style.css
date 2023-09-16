@@ -1,0 +1,20 @@
+.ant-menu-item {
+    margin-right: 18px !important;
+    margin-left: 18px !important;
+}
+html {
+    scroll-behavior: smooth;
+}
+.ant-layout-header {
+    z-index: 1000 !important;
+}
+
+@media (max-width: 600px) { 
+.ant-layout-header {
+    padding: 0 5px !important;
+}
+.ant-menu-item {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+ }
