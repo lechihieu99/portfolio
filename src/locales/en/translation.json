@@ -1,0 +1,132 @@
+{
+    "title": "Translate your react-app with react-i18next",
+    "menu": {
+        "home": "Home",
+        "about": "About me",
+        "project": "Project",
+        "skill": "Skill",
+        "contact": "Contact"
+    },
+    "section1": {
+        "title": "Welcome to my Portfolio!",
+        "scroller": {
+            "line1": "I'm Hieu",
+            "line2": "My full name is Le Chi Hieu",
+            "line3": "Front-end Developer Fresher (ReactJS)",
+            "line4": "University of Science - HCM"
+        }
+    },
+    "section2": {
+        "items": {
+            "key1": {
+                "label": "Full Name",
+                "children": "Lê Chí Hiếu"
+            },
+            "key2": {
+                "label": "Sex",
+                "children": "Male"
+            },
+            "key3": {
+                "label": "Phone Number",
+                "children": "0339042674"
+            },
+            "key4": {
+                "label": "Education",
+                "children": "University of Science - HCM (2019 - 2023)"
+            },
+            "key5": {
+                "label": "Location",
+                "children": "Thủ Đức, Hồ Chí Minh City"
+            },
+            "key6": {
+                "label": "Habit",
+                "children": "Coding, Singing and Drawing"
+            },
+            "key7": {
+                "label": "My CV"
+            },
+            "key8": {
+                "label": "Position",
+                "children": "Front-end Developer Fresher (ReactJS)"
+            }
+        },
+        "text": "I grew up in a poor farmer family, trying every day to pursue my dream path despite many difficulties. After I completed 12 years of school, I put my college dream on hold because I didn't have enough money to cover my living expenses. With my own efforts, I returned to college after 1 year. I started college with a limited amount of knowledge, which led to many difficulties for me to adapt. With my own efforts, I overcame that stage and found a direction for myself, which is to become a Front-end Developer (ReactJS) and am continuing to improve, aiming for a Full-Stack. Developer. I personally feel that I am not the best, but I can guarantee that I can become the most adaptable person.",
+        "pending": "Developing...",
+        "timeline": {
+            "title": "Timeline of studying ReactJS",
+            "key1": {
+                "line1": "March 2023",
+                "line2": "Self-study ReactJS on Youtube"
+            },
+            "key2": {
+                "line1": "April 19, 2023",
+                "line2": "Front-end Developer (ReactJS) Intern in TMA Solutions"
+            },
+            "key3": {
+                "line1": "July 19, 2023",
+                "line2": "Complete the internship"
+            }
+        }
+    },
+    "section3": {
+        "technology": "Technology used:",
+        "or": "or",
+        "interface": "Website interface",
+        "mobile": "Mobile Version",
+        "tab1": {
+            "introduce": "AfU (All for U) is an entertainment website for users, including utilities such as listening to music, playing games and interacting and connecting with friends. With that website, we want users to be able to enjoy all the benefits of the website, immerse themselves in unique music styles, play games of all genres and express their colors. personal identity and thoughts through activities in the Community section",
+            "login": "Login and Signup Page",
+            "home": "Home Page",
+            "games": "Games Page where you can freely play games of all genres",
+            "music": "Music Page where you can immerse yourself in the melodies of life, freely express your personal musical colors",
+            "community": "Community Page is a place where you can interact, connect with people, and freely express your thoughts and feelings in the community."
+        },
+        "tab2": {
+            "introduce": "Cyborg Website is HTML Template in Internet",
+            "home": "Home Page",
+            "browse": "Browse Page",
+            "details": "Details Page",
+            "stream": "Stream Page",
+            "profile": "Profile Page"
+        },
+        "tab3": {
+            "introduce": "My Favourite App",
+            "main": "Main Page"
+        },
+        "tab4": {
+            "introduce": "MotionM5 Website Template",
+            "main": "Main Page"
+        },
+        "project": "Projects"
+    },
+    "section4": {
+        "skill": {
+            "english": "Reading and Understanding English document",
+            "test": "Test, debug, and troubleshoot web applications to ensure functionality and quality",
+            "team": "Teamwork & Collaboration Abilities",
+            "leader": "Leadership Skills: Branch Secretary of 19TTH1 class for two consecutive years",
+            "listen": "Listen and Receive Information. Promote Punctuality",
+            "adapt": "Adaptable and Resistant to Pressure"
+        },
+        "mainSkill": "Main Skills",
+        "otherSkill": "Other Skills",
+        "softSkill": "Soft Skills"
+    },
+    "section5": {
+        "messSuccess": "Send infomation successfully",
+        "messFailed": "Please write all input",
+        "labelName": "Your full name",
+        "placeName": "your full name",
+        "labelEmail": "Email",
+        "placeEmail": "your email",
+        "labelPhone": "Phone Number",
+        "placePhone": "your phone number",
+        "labelCompany": "Company",
+        "placeCompany": "your company",
+        "labelMess": "Message",
+        "placeMess": "write something",
+        "send": "Send Information",
+        "or": "or"
+    },
+    "thank": "Thank you for your visit"
+}

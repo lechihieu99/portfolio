@@ -8,6 +8,10 @@ html {
 .ant-layout-header {
     z-index: 1000 !important;
 }
+.ant-select-selection-item {
+    color: #eeeeee !important;
+    font-weight: bold !important;
+}
 
 @media (max-width: 600px) { 
 .ant-layout-header {

@@ -1,0 +1,130 @@
+{
+    "title": "Translate your react-app with react-i18next",
+    "menu": {
+        "home": "Chính",
+        "about": "Cá nhân",
+        "project": "Dự án",
+        "skill": "Kỹ năng",
+        "contact": "Liên hệ"
+    },
+    "section1": {
+        "title": "Chào mừng đến với Portfolio của tôi!",
+        "scroller": {
+            "line1": "Tôi tên Hiếu",
+            "line2": "Tên đầy đủ là Lê Chí Hiếu",
+            "line3": "Front-end Developer Fresher (ReactJS)",
+            "line4": "Trường Đại học Khoa học Tự nhiên HCM"
+        }
+    },
+    "section2": {
+        "items": {
+            "key1": {
+                "label": "Họ tên",
+                "children": "Lê Chí Hiếu"
+            },
+            "key2": {
+                "label": "Giới tính",
+                "children": "Nam"
+            },
+            "key3": {
+                "label": "Số điện thoại cá nhân",
+                "children": "0339042674"
+            },
+            "key4": {
+                "label": "Học vấn",
+                "children": "Trường Đại học Khoa học Tự nhiên - HCM (2019 - 2023)"
+            },
+            "key5": {
+                "label": "Địa chỉ",
+                "children": "Thủ Đức, TP Hồ Chí Minh"
+            },
+            "key6": {
+                "label": "Sở thích",
+                "children": "Lập trình, Hát và Vẽ"
+            },
+            "key7": {
+                "label": "CV của tôi"
+            },
+            "key8": {
+                "label": "Vị trí công việc",
+                "children": "Front-end Developer Fresher (ReactJS)"
+            }
+        },
+        "text": "tôi lớn lên trong một gia đình nông dân nghèo khó, cố gắng từng ngày để có thể theo đuổi con đường mơ ước dù gặp rất nhiều khó khăn. Sau khi tôi hoàn thành 12 năm học trên nhà trường, tôi đã gác lại ước mơ đại học của mình vì không đủ tài chính trang trải cuộc sống. Với sự cố gắng của bản thân, tôi đã quay lại đại học sau 1 năm. Tôi bắt đầu đại học với lượng kiến thức giới hạn, điều đó dẫn đến không ít khó khăn cho việc thích nghi của tôi. Với sự cố gắng của bản thân, tôi đã vượt qua giai đoạn đó và đã tìm được hướng đi cho bản thân, đó là trở thành 1 Front-end Developer (ReactJS) và đang tiếp tục trau dồi, hướng tới 1 Full-Stack Developer. Chính bản thân tôi cảm thấy tôi không phải là người giỏi nhất, nhưng tôi có thể đảm bảo được rằng tôi có thể trở thành người thích nghi tốt nhất",
+        "pending": "Đang tiếp tục trau dồi...",
+        "timeline": {
+            "title": "Quá trình học ReactJS",
+            "key1": {
+                "line1": "Tháng 3, 2023",
+                "line2": "Tự học ReactJS trên Youtube"
+            },
+            "key2": {
+                "line1": "19 tháng 4, 2023",
+                "line2": "Thực tập sinh Front-end (ReactJS) tại TMA Solutions"
+            },
+            "key3": {
+                "line1": "19 tháng 7, 2023",
+                "line2": "Hoàn thành khóa thực tập"
+            }
+        }
+    },
+    "section3": {
+        "technology": "Công nghêj đã sử dụng:",
+        "or": "hoặc",
+        "interface": "Giao diện trang web",
+        "mobile": "Phiên bản mobile",
+        "tab1": {
+            "introduce": "AfU (all for U) là một trang web giải trí cho người sử dụng, bao gồm các tiện ích như nghe nhạc, chơi game đồng thời giao lưu, kết nối bạn bè. Với trang web đó, chúng tôi mong muốn người dùng có thể tận hưởng tất cả các tiện ích của trang web, hòa mình cùng những phong cách âm nhạc độc đáo, chơi những trò chơi với đầy đủ các thể loại đồng thời thể hiện màu sắc, suy nghĩ cá nhân thông qua các hoạt động trong mục Cộng đồng",
+            "login": "Trang đăng nhập và đăng kí tài khoản",
+            "home": "Trang chủ",
+            "games": "Games Page nơi người dùng có thể thỏa thích vui chơi với đầy đủ các thể loại trò chơi",
+            "music": "Music Page nơi người dùng có thể đắm chìm vào không gian âm nhạc tuyệt vời đồng thời tự do thể hiện màu sắc âm nhạc cá nhân",
+            "community": "Cộng đồng là nơi mọi người có thể gắn kết, kết nối bạn bè đồng thời có thể tự do thể hiện quan điểm, suy nghĩ cá nhân của mình"
+        },
+        "tab2": {
+            "introduce": "Cyborg Website là một template trên Internet",
+            "home": "Home Page",
+            "browse": "Browse Page",
+            "details": "Details Page",
+            "stream": "Stream Page",
+            "profile": "Profile Page"
+        },
+        "tab3": {
+            "introduce": "My Favourite App",
+            "main": "Trang chính"
+        },
+        "tab4": {
+            "introduce": "MotionM5 Website Template",
+            "main": "Trang chính"
+        },
+        "project": "Dự án"
+    },
+    "section4": {
+        "skill": {
+            "test": "Kiểm tra, giải quyết các vấn đề, bug phát sinh",
+            "team": "Kỹ năng làm việc nhóm",
+            "leader": "Kỹ năng lãnh đạo: giữ vị trí bí thư chi đoàn 19TTH1 trong 2 năm liền",
+            "listen": "Biết lắng nghe và tiếp thu thông tin. Đề cao sự đúng giờ",
+            "adapt": "Thích nghi và chịu áp lực tốt"
+        },
+        "mainSkill": "Kỹ năng chính",
+        "otherSkill": "Kỹ năng khác đã được học",
+        "softSkill": "Kỹ năng mềm"
+    },
+    "section5": {
+        "messSuccess": "Gửi thông tin thành công",
+        "messFailed": "Vui lòng điền tất cả thông tin",
+        "labelName": "Họ tên",
+        "placeName": "họ tên của bạn",
+        "labelEmail": "Email",
+        "placeEmail": "email của bạn",
+        "labelPhone": "Số điện thoại",
+        "placePhone": "số điện thoại của bạn",
+        "labelCompany": "Công ty/Doanh nghiệp",
+        "placeCompany": "công ty của bạn",
+        "labelMess": "Lời nhắn",
+        "placeMess": "hãy viết gì đó",
+        "send": "Gửi thông tin",
+        "or": "hoặc"
+    }
+}

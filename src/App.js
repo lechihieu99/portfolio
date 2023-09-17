@@ -11,6 +11,9 @@ import Section3 from './components/section3/Section3';
 import Section4 from './components/section4/Section4';
 import Section5 from './components/section5/Section5';
 
+import { useTranslation } from 'react-i18next';
+import i18n from './translation/i18n';
+
 const headerStyle = {
   textAlign: 'center',
   color: '#fff',
@@ -43,6 +46,8 @@ const footerStyle = {
   backgroundColor: '#000000',
 };
 function App() {
+  const { t } = useTranslation()
+
   const [current, setCurrent] = useState('home');
   const [section2, setSection2] = useState(false)
   const [section3, setSection3] = useState(false)
@@ -150,6 +155,23 @@ function App() {
     );
   }
 
+  const handleChange = (value) => {
+    // console.log(`selected ${value}`);
+    const languageValue = value
+    i18n.changeLanguage(languageValue);
+  };
+
+  const onChangeSwitch = (checked) => {
+    if (checked) {
+      const languageValue = 'eng'
+      i18n.changeLanguage(languageValue);
+    }
+    else {
+      const languageValue = 'vie'
+      i18n.changeLanguage(languageValue);
+    }
+  };
+
   return (
     <>
       <Background />
@@ -158,7 +180,7 @@ function App() {
 
         <Layout>
           <Header style={headerStyle}>
-            <MenuComponents current={current} setCurrent={setCurrent} />
+            <MenuComponents onChange={onChangeSwitch} handleChange={handleChange} current={current} setCurrent={setCurrent} />
           </Header>
           <Content style={contentStyle}>
             <Row>
@@ -174,7 +196,7 @@ function App() {
             </Row>
 
           </Content>
-          <Footer style={footerStyle}>Thank you for your visit</Footer>
+          <Footer style={footerStyle}>{t('thank')}</Footer>
         </Layout>
       </div>
     </>

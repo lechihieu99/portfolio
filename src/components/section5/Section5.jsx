@@ -4,8 +4,10 @@ import React, { useState } from "react";
 import { images } from "../../constant/getImages";
 import axios from 'axios'
 import './style.css'
+import { useTranslation } from 'react-i18next';
 
 const Section5 = ({ animate }) => {
+    const { t } = useTranslation()
     const [form] = Form.useForm();
     const [formLayout, setFormLayout] = useState('vertical');
 
@@ -38,13 +40,13 @@ const Section5 = ({ animate }) => {
             }
             axios.post('https://192.168.137.1:3114/api/send-email', payload)
 
-            setMess('Send infomation successfully')
+            setMess(t('messSuccess'))
             setTimeout(() => {
                 setMess()
             }, 3000)
         }
         else {
-            setMess('Please write all input')
+            setMess(t('messFailed'))
         }
     }
     return (
@@ -66,20 +68,20 @@ const Section5 = ({ animate }) => {
                                             maxWidth: formLayout === 'inline' ? 'none' : 600
                                         }}
                                     >
-                                        <Form.Item label={(<div style={{ color: '#eeeeee' }}>Your full name</div>)}>
-                                            <Input id="name" placeholder="your full name" />
+                                        <Form.Item label={(<div style={{ color: '#eeeeee' }}>{t('section5.labelName')}</div>)}>
+                                            <Input id="name" placeholder={t('section5.placeName')} />
                                         </Form.Item>
-                                        <Form.Item label={(<div style={{ color: '#eeeeee' }}>Email</div>)}>
-                                            <Input id="email" placeholder="your email" />
+                                        <Form.Item label={(<div style={{ color: '#eeeeee' }}>{t('section5.labelEmail')}</div>)}>
+                                            <Input id="email" placeholder={t('section5.placeEmail')} />
                                         </Form.Item>
-                                        <Form.Item label={(<div style={{ color: '#eeeeee' }}>Phone Number</div>)}>
-                                            <Input id="phone" placeholder="your phone number" />
+                                        <Form.Item label={(<div style={{ color: '#eeeeee' }}>{t('section5.labelPhone')}</div>)}>
+                                            <Input id="phone" placeholder={t('section5.placePhone')} />
                                         </Form.Item>
-                                        <Form.Item label={(<div style={{ color: '#eeeeee' }}>Company</div>)}>
-                                            <Input id="company" placeholder="your company" />
+                                        <Form.Item label={(<div style={{ color: '#eeeeee' }}>{t('section5.labelCompany')}</div>)}>
+                                            <Input id="company" placeholder={t('section5.placeCompany')} />
                                         </Form.Item>
-                                        <Form.Item label={(<div style={{ color: '#eeeeee' }}>Message</div>)}>
-                                            <Input.TextArea id="message" placeholder="write something" />
+                                        <Form.Item label={(<div style={{ color: '#eeeeee' }}>{t('section5.labelMess')}</div>)}>
+                                            <Input.TextArea id="message" placeholder={t('section5.placeMess')} />
                                         </Form.Item>
                                         <Form.Item style={{ textAlign: 'left' }}>
                                             <ConfigProvider
@@ -92,7 +94,7 @@ const Section5 = ({ animate }) => {
                                                     }
                                                 }}
                                             >
-                                                <Button onClick={onFinish}>Send Infomation</Button>
+                                                <Button onClick={onFinish}>{t('section5.send')}</Button>
                                                 <div style={{ color: '#fc3728' }}>{mess}</div>
                                             </ConfigProvider>
                                         </Form.Item>
@@ -102,7 +104,7 @@ const Section5 = ({ animate }) => {
                         </Col>
                         <Col span={24}>
                             <div style={{ width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', lineHeight: 1 }}>
-                                - or -
+                                - {t('section5.or')} -
                             </div>
                         </Col>
                         <Col span={24}>
@@ -153,20 +155,20 @@ const Section5 = ({ animate }) => {
                                             maxWidth: formLayout === 'inline' ? 'none' : 600
                                         }}
                                     >
-                                        <Form.Item label={(<div style={{ color: '#eeeeee' }}>Your full name</div>)}>
-                                            <Input id="name" placeholder="your full name" />
+                                        <Form.Item label={(<div style={{ color: '#eeeeee' }}>{t('section5.labelName')}</div>)}>
+                                            <Input id="name" placeholder={t('section5.placeName')} />
                                         </Form.Item>
-                                        <Form.Item label={(<div style={{ color: '#eeeeee' }}>Email</div>)}>
-                                            <Input id="email" placeholder="your email" />
+                                        <Form.Item label={(<div style={{ color: '#eeeeee' }}>{t('section5.labelEmail')}</div>)}>
+                                            <Input id="email" placeholder={t('section5.placeEmail')} />
                                         </Form.Item>
-                                        <Form.Item label={(<div style={{ color: '#eeeeee' }}>Phone Number</div>)}>
-                                            <Input id="phone" placeholder="your phone number" />
+                                        <Form.Item label={(<div style={{ color: '#eeeeee' }}>{t('section5.labelPhone')}</div>)}>
+                                            <Input id="phone" placeholder={t('section5.placePhone')} />
                                         </Form.Item>
-                                        <Form.Item label={(<div style={{ color: '#eeeeee' }}>Company</div>)}>
-                                            <Input id="company" placeholder="your company" />
+                                        <Form.Item label={(<div style={{ color: '#eeeeee' }}>{t('section5.labelCompany')}</div>)}>
+                                            <Input id="company" placeholder={t('section5.placeCompany')} />
                                         </Form.Item>
-                                        <Form.Item label={(<div style={{ color: '#eeeeee' }}>Message</div>)}>
-                                            <Input.TextArea id="message" placeholder="write something" />
+                                        <Form.Item label={(<div style={{ color: '#eeeeee' }}>{t('section5.labelMess')}</div>)}>
+                                            <Input.TextArea id="message" placeholder={t('section5.placeMess')} />
                                         </Form.Item>
                                         <Form.Item style={{ textAlign: 'left' }}>
                                             <ConfigProvider
@@ -179,7 +181,7 @@ const Section5 = ({ animate }) => {
                                                     }
                                                 }}
                                             >
-                                                <Button onClick={onFinish}>Send Infomation</Button>
+                                                <Button onClick={onFinish}>{t('section5.send')}</Button>
                                                 <div style={{ color: '#fc3728' }}>{mess}</div>
                                             </ConfigProvider>
                                         </Form.Item>
@@ -189,7 +191,7 @@ const Section5 = ({ animate }) => {
                         </Col>
                         <Col span={2}>
                             <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                                - or -
+                                - {t('section5.or')} -
                             </div>
                         </Col>
                         <Col span={11}>
@@ -197,7 +199,7 @@ const Section5 = ({ animate }) => {
                                 <div className={`${animate.animate2 ? "active2Section5" : "notActive2Section5"} divStyle`} style={{ width: '100%', display: 'flex', flexDirection: 'column', border: '1px solid rgba(255, 255, 255, 0.222)', borderRadius: '10px', padding: '16px', backgroundColor: 'rgba(255, 255, 255, 0.074)', backdropFilter: 'blur(20px)', gap: 16, transition: 'all 1s ease-in-out' }}>
 
                                     <div style={{ borderRadius: '100%' }}>
-                                        <Avatar src={images.Avatar} size={window.innerWidth < 600 ? 100 : window.innerWidth > 600 && window.innerWidth < 1000 ? 220 : 300} >
+                                        <Avatar src={images.Avatar} size={window.innerWidth < 600 ? 100 : window.innerWidth > 600 && window.innerWidth < 1000 ? 220 : 260} >
 
                                         </Avatar>
                                     </div>

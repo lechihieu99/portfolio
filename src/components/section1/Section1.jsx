@@ -6,8 +6,9 @@ import { ArrowCircleDown } from '@phosphor-icons/react'
 
 import './style.css'
 import { images } from "../../constant/getImages";
-
+import { useTranslation } from 'react-i18next';
 const Section1 = ({ setCurrent }) => {
+    const { t } = useTranslation()
 
     const [hour, setHour] = useState('00')
     const [minute, setMinute] = useState('00')
@@ -34,14 +35,14 @@ const Section1 = ({ setCurrent }) => {
                         </div>
                     )}
                     <Typography.Title level={1} style={{ margin: 0, color: '#e350a8', textAlign: 'left' }}>
-                        Welcome to my Portfolio!
+                        {t('section1.title')}
                     </Typography.Title>
                     <div className="scroller">
                         <span>
-                            I'm Hieu<br />
-                            My full name is Le Chi Hieu<br />
-                            Front-end Developer Fresher {`(ReactJS)`}<br />
-                            University of Science - HCM
+                            {t('section1.scroller.line1')}<br />
+                            {t('section1.scroller.line2')}<br />
+                            {t('section1.scroller.line3')}<br />
+                            {t('section1.scroller.line4')}
                         </span>
                     </div>
                     <Typography.Title level={3} style={{ margin: 0, color: '#e350a8', textAlign: 'left', paddingTop: 12 }}>
