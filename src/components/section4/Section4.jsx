@@ -132,7 +132,7 @@ const Section4 = ({ animate }) => {
                                                 <button className="Btn">
                                                     <span className="svgContainer">
                                                         <svg xmlns="http://www.w3.org/2000/svg" fill={item.fill} x="0px" y="0px" viewBox="0 0 50 50" width={window.innerWidth < 1080 ? "2.2em" : "3em"} height={window.innerWidth < 1080 ? "2.2em" : "3em"}>
-                                                            <path fill-rule="evenodd" d={item.path}></path>
+                                                            <path fillRule="evenodd" d={item.path}></path>
                                                         </svg>
                                                     </span>
                                                     <span className="BG" style={{ background: `${item.background}` }}></span>
@@ -150,7 +150,7 @@ const Section4 = ({ animate }) => {
                                                 <button className="Btn">
                                                     <span className="svgContainer">
                                                         <svg xmlns="http://www.w3.org/2000/svg" fill={item.fill} x="0px" y="0px" viewBox="0 0 50 50" width={window.innerWidth < 1080 ? "2.2em" : "3em"} height={window.innerWidth < 1080 ? "2.2em" : "3em"}>
-                                                            <path fill-rule="evenodd" d={item.path}></path>
+                                                            <path fillRule="evenodd" d={item.path}></path>
                                                         </svg>
                                                     </span>
                                                     <span className="BG" style={{ background: `${item.background}` }}></span>
@@ -226,7 +226,7 @@ const Section4 = ({ animate }) => {
                                                 <button className="Btn">
                                                     <span className="svgContainer">
                                                         <svg xmlns="http://www.w3.org/2000/svg" fill={item.fill} x="0px" y="0px" viewBox="0 0 50 50" width={window.innerWidth < 1080 ? "2.2em" : "3em"} height={window.innerWidth < 1080 ? "2.2em" : "3em"}>
-                                                            <path fill-rule="evenodd" d={item.path}></path>
+                                                            <path fillRule="evenodd" d={item.path}></path>
                                                         </svg>
                                                     </span>
                                                     <span className="BG" style={{ background: `${item.background}` }}></span>
@@ -244,7 +244,7 @@ const Section4 = ({ animate }) => {
                                                 <button className="Btn">
                                                     <span className="svgContainer">
                                                         <svg xmlns="http://www.w3.org/2000/svg" fill={item.fill} x="0px" y="0px" viewBox="0 0 50 50" width={window.innerWidth < 1080 ? "2.2em" : "3em"} height={window.innerWidth < 1080 ? "2.2em" : "3em"}>
-                                                            <path fill-rule="evenodd" d={item.path}></path>
+                                                            <path fillRule="evenodd" d={item.path}></path>
                                                         </svg>
                                                     </span>
                                                     <span className="BG" style={{ background: `${item.background}` }}></span>
