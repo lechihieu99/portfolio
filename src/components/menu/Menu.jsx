@@ -5,6 +5,7 @@ import { useState } from 'react';
 import './style.css'
 import { useTranslation } from 'react-i18next';
 import i18n from '../../translation/i18n';
+import { useEffect } from 'react';
 
 const { Text } = Typography
 
@@ -19,76 +20,87 @@ const menuStyle = {
 const MenuComponents = ({ current, setCurrent, handleChange, onChange }) => {
 
     const { t } = useTranslation()
+    const [width, setWidth] = useState(window.innerWidth)
 
-    const items = [
-        {
-            label: (
-                <a href="#home" rel="noopener noreferrer">
-                    <b>{t('menu.home')}</b>
-                </a>
-            ),
-            key: 'home',
-        },
-        {
-            label: (
-                <a href="#about" rel="noopener noreferrer">
-                    <b>{t('menu.about')}</b>
-                </a>
-            ),
-            key: 'about',
-        },
-        {
-            label: (
-                <a href="#project" rel="noopener noreferrer">
-                    <b>{t('menu.project')}</b>
-                </a>
-            ),
-            key: 'project',
-        },
-        {
-            label: (
-                <a href="#skill" rel="noopener noreferrer">
-                    <b>{t('menu.skill')}</b>
-                </a>
-            ),
-            key: 'skill',
-        },
-        {
-            label: (
-                <a href="#contact" rel="noopener noreferrer">
-                    <b>{t('menu.contact')}</b>
-                </a>
-            ),
-            key: 'contact',
-        },
-        {
-            label: window.innerWidth > 800 ? (
-                <Select
-                    bordered={false}
-                    suffixIcon={<CaretDown color="#eeeeee" size={16} />}
-                    defaultValue="eng"
-                    onChange={handleChange}
-                    options={[
-                        {
-                            value: 'eng',
-                            label: 'ENG',
-                        },
-                        {
-                            value: 'vie',
-                            label: 'VIE',
-                        }
-                    ]}
-                />
-            ) : (
-                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', color: '#000000', fontWeight: 'bold', gap: 6 }}>
-                    <span>VIE</span>
-                    <Switch defaultChecked onChange={onChange} />
-                    <span>ENG</span>
-                </div>
-            ),
-            key: 'language'
-        }
-    ];
+    const [items, setItems] = useState()
+
+    useEffect(() => {
+        window.addEventListener("resize", () => {
+            setWidth(window.innerWidth)
+        })
+    }, [])
+
+    useEffect(() => {
+        setItems([
+            {
+                label: (
+                    <a href="#home" rel="noopener noreferrer">
+                        <b>{t('menu.home')}</b>
+                    </a>
+                ),
+                key: 'home',
+            },
+            {
+                label: (
+                    <a href="#about" rel="noopener noreferrer">
+                        <b>{t('menu.about')}</b>
+                    </a>
+                ),
+                key: 'about',
+            },
+            {
+                label: (
+                    <a href="#project" rel="noopener noreferrer">
+                        <b>{t('menu.project')}</b>
+                    </a>
+                ),
+                key: 'project',
+            },
+            {
+                label: (
+                    <a href="#skill" rel="noopener noreferrer">
+                        <b>{t('menu.skill')}</b>
+                    </a>
+                ),
+                key: 'skill',
+            },
+            {
+                label: (
+                    <a href="#contact" rel="noopener noreferrer">
+                        <b>{t('menu.contact')}</b>
+                    </a>
+                ),
+                key: 'contact',
+            },
+            {
+                label: width > 800 ? (
+                    <Select
+                        bordered={false}
+                        suffixIcon={<CaretDown color="#eeeeee" size={16} />}
+                        defaultValue="eng"
+                        onChange={handleChange}
+                        options={[
+                            {
+                                value: 'eng',
+                                label: 'ENG',
+                            },
+                            {
+                                value: 'vie',
+                                label: 'VIE',
+                            }
+                        ]}
+                    />
+                ) : (
+                    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', color: '#000000', fontWeight: 'bold', gap: 6 }}>
+                        <span>VIE</span>
+                        <Switch defaultChecked onChange={onChange} />
+                        <span>ENG</span>
+                    </div>
+                ),
+                key: 'language'
+            }
+        ])
+    }, [width])
 
 
     const onClick = (e) => {
@@ -115,7 +127,7 @@ const MenuComponents = ({ current, setCurrent, handleChange, onChange }) => {
                 <Col span={6}>
                     <Space align='center' style={{ width: '100%', height: '100%' }}>
                         {/* <Text style={{ color: '#e350a8' }}>ABC</Text> */}
-                        <Typography.Title level={window.innerWidth < 600 ? 5 : 3} style={{ margin: 0, color: '#e350a8' }}>
+                        <Typography.Title level={window.innerWidth < 800 ? 5 : 3} style={{ margin: 0, color: '#e350a8' }}>
                             LECHIHIEU
                         </Typography.Title>
                     </Space>
