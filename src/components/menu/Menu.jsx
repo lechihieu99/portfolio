@@ -100,7 +100,7 @@ const MenuComponents = ({ current, setCurrent, handleChange, onChange }) => {
                 key: 'language'
             }
         ])
-    }, [width])
+    }, [width, t])
 
 
     const onClick = (e) => {
