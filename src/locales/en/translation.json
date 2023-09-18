@@ -17,6 +17,7 @@
         }
     },
     "section2": {
+        "title": "My Information",
         "items": {
             "key1": {
                 "label": "Full Name",

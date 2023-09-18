@@ -22,7 +22,7 @@
 
 @media (max-width: 600px) { 
   .scroller {
-    height: 2em;
+    height: 1.8em;
     line-height: 2em;
   }
   .scroller > span {

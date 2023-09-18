@@ -17,6 +17,7 @@
         }
     },
     "section2": {
+        "title": "Thông tin cá nhân",
         "items": {
             "key1": {
                 "label": "Họ tên",

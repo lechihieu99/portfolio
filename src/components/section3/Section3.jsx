@@ -23,10 +23,16 @@ const Section3 = ({ animate }) => {
                 </div>
                 <div style={{ color: '#e350a8', lineHeight: 1.5, paddingTop: 16 }}>
                     <b>URL: </b><a href="https://lechihieu99.github.io/afuproject" target="_blank" style={{ textDecoration: 'none', color: '#eeeeee' }}>lechihieu99.github.io/afuproject</a><br />
-                    {t('section3.or')}<br />
+                    <br />
                     <div style={{ background: '#fff', width: 'fit-content' }}>
                         <QRCode value="https://lechihieu99.github.io/afuproject" />
                     </div>
+                    {t('section3.or')}<br />
+                    <b>URL: </b><a href="http://192.168.137.1:3000/afuproject" target="_blank" style={{ textDecoration: 'none', color: '#eeeeee' }}>192.168.137.1:3000/afuproject</a><br />
+                    <div style={{ background: '#fff', width: 'fit-content' }}>
+                        <QRCode value="http://192.168.137.1:3000/afuproject" />
+                    </div>
+
                 </div>
                 <div style={{ color: '#eeeeee', lineHeight: 1.5, paddingTop: 16 }}>
                     <b>{t('section3.interface')}:</b><br />
