@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.014daea7.css",
-    "main.js": "/portfolio/static/js/main.224138eb.js",
+    "main.js": "/portfolio/static/js/main.08663bcd.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/MotionM5.png": "/portfolio/static/media/MotionM5.ca8189abc562715196ef.png",
     "static/media/Music.png": "/portfolio/static/media/Music.096de2e7487837a3e4de.png",
@@ -12,21 +12,35 @@
     "static/media/AfU_Music2.png": "/portfolio/static/media/AfU_Music2.61431d2c43aa346ae0aa.png",
     "static/media/AfU_Community1.png": "/portfolio/static/media/AfU_Community1.8b545e42c89368875e41.png",
     "static/media/Cyborg_Details.png": "/portfolio/static/media/Cyborg_Details.b026ffb66cbcd00b3ae0.png",
+    "static/media/Music_Home2.jpg": "/portfolio/static/media/Music_Home2.bfd23be7d02c03bc8fed.jpg",
     "static/media/AfU_Home.png": "/portfolio/static/media/AfU_Home.b5c87541cebc272d72df.png",
+    "static/media/Music_Home3.jpg": "/portfolio/static/media/Music_Home3.366379dae07732b9048a.jpg",
     "static/media/AfU_Game.png": "/portfolio/static/media/AfU_Game.87e805353d2e7ececee6.png",
+    "static/media/Music_Home1.jpg": "/portfolio/static/media/Music_Home1.07414b82c0dcb6e354ee.jpg",
+    "static/media/Music_Player3.jpg": "/portfolio/static/media/Music_Player3.3758a5d67977676c96b8.jpg",
     "static/media/Cyborg_Browse.png": "/portfolio/static/media/Cyborg_Browse.b121156e16b438149c79.png",
+    "static/media/Music_Playlist.jpg": "/portfolio/static/media/Music_Playlist.9e814cd3cfea03bd08fc.jpg",
+    "static/media/Music_Player2.jpg": "/portfolio/static/media/Music_Player2.75510c47e01ef206a01c.jpg",
+    "static/media/Music_Search2.jpg": "/portfolio/static/media/Music_Search2.c5933662b3f9c530bee6.jpg",
     "static/media/Cyborg_Profile.png": "/portfolio/static/media/Cyborg_Profile.5e0d7abaa8fc66bb78a1.png",
+    "static/media/Music_Chart2.jpg": "/portfolio/static/media/Music_Chart2.896ba0cc00f762df0fb5.jpg",
+    "static/media/Music_Chart1.jpg": "/portfolio/static/media/Music_Chart1.2c0e49f87a49e7adbbcf.jpg",
+    "static/media/Music_Player1.jpg": "/portfolio/static/media/Music_Player1.ffa60522f2a0cd94b988.jpg",
+    "static/media/Music_Player4.jpg": "/portfolio/static/media/Music_Player4.45ad44d62ae5c035be35.jpg",
     "static/media/Music_Mobile.png": "/portfolio/static/media/Music_Mobile.22b2237c17aa5d60c5ed.png",
     "static/media/Cyborg_Home.png": "/portfolio/static/media/Cyborg_Home.df921c5325d929296f32.png",
     "static/media/img1.jpg": "/portfolio/static/media/img1.70f26cdb33f9a9720961.jpg",
     "static/media/AfU_Community1_Mobile.png": "/portfolio/static/media/AfU_Community1_Mobile.1a9b3ba6b01ab8db646d.png",
     "static/media/CVViet.pdf": "/portfolio/static/media/CVViet.77db1d777f2bfc34580e.pdf",
     "static/media/AfU_Music1_Mobile.png": "/portfolio/static/media/AfU_Music1_Mobile.ae0b9220e04dbb516406.png",
+    "static/media/Music_Search1.jpg": "/portfolio/static/media/Music_Search1.12c56f9375d728442cbc.jpg",
     "static/media/Cyborg_Details_Mobile.png": "/portfolio/static/media/Cyborg_Details_Mobile.6e2056214f0a5ddf5ce1.png",
     "static/media/AfU_Game_Mobile.png": "/portfolio/static/media/AfU_Game_Mobile.a37166daf00ad3b03e78.png",
     "static/media/CVEng.pdf": "/portfolio/static/media/CVEng.58db3bcde15d89d9c280.pdf",
     "static/media/AfU_Login_Mobile.png": "/portfolio/static/media/AfU_Login_Mobile.721fe48cae85b4010466.png",
     "static/media/AfU_Music2_Mobile.png": "/portfolio/static/media/AfU_Music2_Mobile.a85c2f724c40ec9c4213.png",
+    "static/media/CVViet_Ver.pdf": "/portfolio/static/media/CVViet_Ver.c7f0b78d1f53e389b4a0.pdf",
+    "static/media/CVEng_Ver.pdf": "/portfolio/static/media/CVEng_Ver.007c9173a794ea82c3e5.pdf",
     "static/media/AfU_Home_Mobile.png": "/portfolio/static/media/AfU_Home_Mobile.372ac5ed7e36b7703d6c.png",
     "static/media/Cyborg_Stream_Mobile.png": "/portfolio/static/media/Cyborg_Stream_Mobile.e10fd844aa3e34e2c228.png",
     "static/media/Cyborg_Browse_Mobile.png": "/portfolio/static/media/Cyborg_Browse_Mobile.4e2580b41964396d67d2.png",
@@ -36,11 +50,11 @@
     "index.html": "/portfolio/index.html",
     "static/media/getFetch.cjs": "/portfolio/static/media/getFetch.40f37ddea2378391108f.cjs",
     "main.014daea7.css.map": "/portfolio/static/css/main.014daea7.css.map",
-    "main.224138eb.js.map": "/portfolio/static/js/main.224138eb.js.map",
+    "main.08663bcd.js.map": "/portfolio/static/js/main.08663bcd.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.014daea7.css",
-    "static/js/main.224138eb.js"
+    "static/js/main.08663bcd.js"
   ]
 }
