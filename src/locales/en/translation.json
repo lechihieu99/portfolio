@@ -98,6 +98,17 @@
             "introduce": "MotionM5 Website Template",
             "main": "Main Page"
         },
+        "tab5": {
+            "introduce": "Mini Music App",
+            "home": "Home",
+            "search": "Search",
+            "chart": "Chart",
+            "playlist": "Playlist",
+            "player": "Player",
+            "how": "How to view this application?",
+            "step1": "Install Expo Go in Offical Store (both Android and iOS)",
+            "step2": "Open Expo Go and Scan QR below"
+        },
         "project": "Projects"
     },
     "section4": {

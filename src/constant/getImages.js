@@ -28,6 +28,20 @@ import CyborgProfileMobile from '../asset/image/Cyborg_Profile_Mobile.png'
 import Music from '../asset/image/Music.png'
 import MusicMobile from '../asset/image/Music_Mobile.png'
 
+import MusicHome1 from '../asset/image/Music_Home1.jpg'
+import MusicHome2 from '../asset/image/Music_Home2.jpg'
+import MusicHome3 from '../asset/image/Music_Home3.jpg'
+import MusicPlaylist from '../asset/image/Music_Playlist.jpg'
+import MusicPlayer1 from '../asset/image/Music_Player1.jpg'
+import MusicPlayer2 from '../asset/image/Music_Player2.jpg'
+import MusicPlayer3 from '../asset/image/Music_Player3.jpg'
+import MusicPlayer4 from '../asset/image/Music_Player4.jpg'
+import MusicSearch1 from '../asset/image/Music_Search1.jpg'
+import MusicSearch2 from '../asset/image/Music_Search2.jpg'
+import MusicChart1 from '../asset/image/Music_Chart1.jpg'
+import MusicChart2 from '../asset/image/Music_Chart2.jpg'
+import QR from '../asset/image/QRMusic.png'
+
 import MotionM5 from '../asset/image/MotionM5.png'
 
 export const images = {
@@ -62,5 +76,19 @@ export const images = {
     Music: Music,
     MusicMobile: MusicMobile,
 
-    MotionM5: MotionM5
+    MotionM5: MotionM5,
+
+    MusicHome1: MusicHome1,
+    MusicHome2: MusicHome2,
+    MusicHome3: MusicHome3,
+    MusicChart1: MusicChart1,
+    MusicChart2: MusicChart2,
+    MusicPlayer1: MusicPlayer1,
+    MusicPlayer2: MusicPlayer2,
+    MusicPlayer3: MusicPlayer3,
+    MusicPlayer4: MusicPlayer4,
+    MusicPlaylist: MusicPlaylist,
+    MusicSearch1: MusicSearch1,
+    MusicSearch2: MusicSearch2,
+    QRMusic: QR
 }

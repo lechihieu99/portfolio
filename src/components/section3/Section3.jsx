@@ -129,7 +129,106 @@ const Section3 = ({ animate }) => {
 
 
                 </Carousel>
-            </div >
+            </div>
+        )
+    }
+
+    const Tab5 = () => {
+        return (
+            <div style={{ textAlign: 'left', borderBottom: '1px solid rgba(255, 255, 255, 0.454)', borderRight: '1px solid rgba(255, 255, 255, 0.454)', borderLeft: '1px solid rgba(255, 255, 255, 0.454)', borderRadius: '10px', padding: 16 }}>
+                <div style={{ color: '#eeeeee', lineHeight: 1.5 }}>
+                    {t('section3.tab5.introduce')}
+                </div>
+                <div style={{ color: '#eeeeee', lineHeight: 1.5 }}>
+                    <b>{t('section3.technology')}</b> JavaScript, React Native, Redux Tool-kit, NodeJS, ExpressJS, MySQL, Expo Icons,...
+                </div>
+                <div style={{ color: '#e350a8', lineHeight: 1.5, paddingTop: 16 }}>
+                    <b>{t('section3.tab5.how')} </b>
+                    <br />
+                    <b>1. </b><span>{t('section3.tab5.step1')}</span>
+                    <br />
+                    <b>2. </b><span>{t('section3.tab5.step2')}</span>
+                    <br />
+                    <div style={{ background: '#fff', width: 'fit-content' }}>
+                        <Image src={images.QRMusic} />
+                    </div>
+
+                </div>
+                <div style={{ color: '#eeeeee', lineHeight: 1.5, paddingTop: 16 }}>
+                    <b>{t('section3.interface')}:</b><br />
+                </div>
+                <div style={{ color: '#e350a8', lineHeight: 1.5 }}>
+                    <b>{t('section3.tab5.home')}</b>
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', gap: 16 }}>
+                    <Image
+                        width='100%'
+                        src={images.MusicHome1}
+                    />
+                    <Image
+                        width='100%'
+                        src={images.MusicHome2}
+                    />
+                    <Image
+                        width='100%'
+                        src={images.MusicHome3}
+                    />
+                </div>
+                <div style={{ color: '#e350a8', lineHeight: 1.5, paddingTop: 16 }}>
+                    <b>{t('section3.tab5.playlist')}</b>
+                </div>
+                <Image
+                    width='25%'
+                    src={images.MusicPlaylist}
+                />
+                <div style={{ color: '#e350a8', lineHeight: 1.5, paddingTop: 16 }}>
+                    <b>{t('section3.tab5.search')}</b>
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-start', gap: 16 }}>
+                    <Image
+                        width='25%'
+                        src={images.MusicSearch1}
+                    />
+                    <Image
+                        width='25%'
+                        src={images.MusicSearch2}
+                    />
+                </div>
+                <div style={{ color: '#e350a8', lineHeight: 1.5, paddingTop: 16 }}>
+                    <b>{t('section3.tab5.chart')}</b>
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-start', gap: 16 }}>
+                    <Image
+                        width='25%'
+                        src={images.MusicChart1}
+                    />
+                    <Image
+                        width='25%'
+                        src={images.MusicChart2}
+                    />
+                </div>
+                <div style={{ color: '#e350a8', lineHeight: 1.5, paddingTop: 16 }}>
+                    <b>{t('section3.tab5.player')}</b>
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', gap: 16 }}>
+                    <Image
+                        width='100%'
+                        src={images.MusicPlayer1}
+                    />
+                    <Image
+                        width='100%'
+                        src={images.MusicPlayer2}
+                    />
+                    <Image
+                        width='100%'
+                        src={images.MusicPlayer3}
+                    />
+                    <Image
+                        width='100%'
+                        src={images.MusicPlayer4}
+                    />
+                </div>
+            </div>
         )
     }
 
@@ -299,16 +398,21 @@ const Section3 = ({ animate }) => {
         },
         {
             key: '2',
+            label: 'Mini Music App with React Native',
+            children: <Tab5 />,
+        },
+        {
+            key: '3',
             label: 'Cyborg Website Template',
             children: <Tab2 />,
         },
         {
-            key: '3',
+            key: '4',
             label: 'My Favourite App',
             children: <Tab3 />,
         },
         {
-            key: '4',
+            key: '5',
             label: 'MotionM5 Template',
             children: <Tab4 />,
         },
@@ -329,7 +433,7 @@ const Section3 = ({ animate }) => {
                 }}
             >
                 <Typography.Title level={5} style={{ margin: 0, color: '#e350a8' }}>
-                    4 {t('section3.project')}
+                    5 {t('section3.project')}
                 </Typography.Title>
 
                 <Tabs moreIcon={<DotsThreeVertical color="#fff" size={20} />} defaultActiveKey="1" items={items} onChange={onChange} />

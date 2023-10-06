@@ -98,6 +98,17 @@
             "introduce": "MotionM5 Website Template",
             "main": "Trang chính"
         },
+        "tab5": {
+            "introduce": "Mini Music App",
+            "home": "Khám phá",
+            "search": "Tìm kiếm",
+            "chart": "Bảng xếp hạng",
+            "playlist": "Playlist",
+            "player": "Trình phát nhạc",
+            "how": "Làm cách nào để trải nghiệm ứng dụng này?",
+            "step1": " Cài đặt ứng dụng Expo Go trên Cửa hàng ứng dụng chính thống (hổ trợ cho cả Android và iOS)",
+            "step2": "Mở ứng dụng Expo Go và quét mã QR bên dưới"
+        },
         "project": "Dự án"
     },
     "section4": {

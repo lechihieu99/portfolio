@@ -3,6 +3,8 @@ import { ConfigProvider, Descriptions, Divider, Timeline } from 'antd';
 
 import CvEng from '../../asset/file/CVEng.pdf'
 import CvViet from '../../asset/file/CVViet.pdf'
+import CvEngVer from '../../asset/file/CVEng_Ver.pdf'
+import CvVietVer from '../../asset/file/CVViet_Ver.pdf'
 
 import './style.css'
 import { useEffect } from "react";
@@ -46,8 +48,12 @@ const Section2 = ({ animate }) => {
             label: t('section2.items.key7.label'),
             children: (
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'start' }}>
+
+                    <a href={CvEngVer} download>CV - English - Lê Chí Hiếu - Basic</a>
+                    <a href={CvVietVer} download>CV - Vietnam - Lê Chí Hiếu - Basic</a>
                     <a href={CvEng} download>CV - English - Lê Chí Hiếu</a>
                     <a href={CvViet} download>CV - Vietnam - Lê Chí Hiếu</a>
+
                 </div>
             ),
         },
