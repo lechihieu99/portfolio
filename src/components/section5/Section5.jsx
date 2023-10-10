@@ -40,13 +40,13 @@ const Section5 = ({ animate }) => {
             }
             axios.post('https://192.168.137.1:3114/api/send-email', payload)
 
-            setMess(t('messSuccess'))
+            setMess(t('section5.messSuccess'))
             setTimeout(() => {
                 setMess()
             }, 3000)
         }
         else {
-            setMess(t('messFailed'))
+            setMess(t('section5.messFailed'))
         }
     }
     return (
