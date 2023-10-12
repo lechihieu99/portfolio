@@ -5,6 +5,8 @@ import { images } from '../../constant/getImages';
 import './style.css'
 import { useTranslation } from 'react-i18next';
 
+import musicApp from '../../asset/file/mini_music.apk'
+
 const Section3 = ({ animate }) => {
     const { t } = useTranslation()
 
@@ -145,14 +147,8 @@ const Section3 = ({ animate }) => {
                 <div style={{ color: '#e350a8', lineHeight: 1.5, paddingTop: 16 }}>
                     <b>{t('section3.tab5.how')} </b>
                     <br />
-                    <b>1. </b><span>{t('section3.tab5.step1')}</span>
-                    <br />
-                    <b>2. </b><span>{t('section3.tab5.step2')}</span>
-                    <br />
-                    <div style={{ background: '#fff', width: 'fit-content' }}>
-                        <Image src={images.QRMusic} />
-                    </div>
-
+                    <b>Android (APK): </b>
+                    <a href={musicApp} target="_blank" style={{ textDecoration: 'none', color: 'yellow' }}>Mini Music App.apk</a><br />
                 </div>
                 <div style={{ color: '#eeeeee', lineHeight: 1.5, paddingTop: 16 }}>
                     <b>{t('section3.interface')}:</b><br />
