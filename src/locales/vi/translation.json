@@ -106,8 +106,7 @@
             "playlist": "Playlist",
             "player": "Trình phát nhạc",
             "how": "Làm cách nào để trải nghiệm ứng dụng này?",
-            "step1": " Cài đặt ứng dụng Expo Go trên Cửa hàng ứng dụng chính thống (hổ trợ cho cả Android và iOS)",
-            "step2": "Mở ứng dụng Expo Go và quét mã QR bên dưới"
+            "warning": "Do sử dụng ngrok.io cho NodeJS Server nên nếu có bất kỳ vấn đề gì về ứng dụng (không load được data) thì vui lòng truy cập lại portfolio và tải lại file APK"
         },
         "project": "Dự án"
     },

@@ -188,7 +188,7 @@ function App() {
               <Col span={window.innerWidth < 600 ? 22 : 20}>
                 <Section1 setCurrent={setCurrent} />
                 <Section2 animate={animateSection2} />
-                <Section3 animate={animateSection3} />
+                <Section3 />
                 <Section4 animate={animateSection4} />
                 <Section5 animate={animateSection5} />
               </Col>

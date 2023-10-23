@@ -106,8 +106,7 @@
             "playlist": "Playlist",
             "player": "Player",
             "how": "How to view this application?",
-            "step1": "Install Expo Go in Offical Store (both Android and iOS)",
-            "step2": "Open Expo Go and Scan QR below"
+            "warning": "Due to using ngrok.io for NodeJS Server, if there are any problems with the application (unable to load data), please visit the portfolio again and download the APK file again."
         },
         "project": "Projects"
     },

@@ -148,6 +148,9 @@ const Section3 = ({ animate }) => {
                     <b>{t('section3.tab5.how')} </b>
                     <br />
                     <b>Android (APK): </b>
+                    <br />
+                    <span style={{ color: 'red' }}>{t('section3.tab5.warning')}</span>
+                    <br />
                     <a href={musicApp} target="_blank" style={{ textDecoration: 'none', color: 'yellow' }}>Mini Music App.apk</a><br />
                 </div>
                 <div style={{ color: '#eeeeee', lineHeight: 1.5, paddingTop: 16 }}>
@@ -414,7 +417,7 @@ const Section3 = ({ animate }) => {
         },
     ];
     return (
-        <div className={`${animate ? "activeSection3" : "notActiveSection3"}`} id="project" style={{ width: '100%', minHeight: '100vh', paddingTop: 64, transition: 'all 1s ease-in-out' }}>
+        <div id="project" style={{ width: '100%', minHeight: '100vh', paddingTop: 64, transition: 'all 1s ease-in-out' }}>
             <ConfigProvider
                 theme={{
                     components: {
