@@ -5,7 +5,7 @@ import { images } from '../../constant/getImages';
 import './style.css'
 import { useTranslation } from 'react-i18next';
 
-import musicApp from '../../asset/file/miniMusicApp.apk'
+import musicApp from '../../asset/file/miniMusic.apk'
 
 const Section3 = ({ animate }) => {
     const { t } = useTranslation()
