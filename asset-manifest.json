@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.014daea7.css",
-    "main.js": "/portfolio/static/js/main.31ece1b6.js",
+    "main.js": "/portfolio/static/js/main.c02eb014.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/miniMusicApp.apk": "/portfolio/static/media/miniMusicApp.6791bc6dbd8deca9e77c.apk",
+    "static/media/miniMusic.apk": "/portfolio/static/media/miniMusic.e62b60859cf5394035d5.apk",
     "static/media/MotionM5.png": "/portfolio/static/media/MotionM5.ca8189abc562715196ef.png",
     "static/media/Music.png": "/portfolio/static/media/Music.096de2e7487837a3e4de.png",
     "static/media/AfU_Community2.png": "/portfolio/static/media/AfU_Community2.4bb63b8e61065609d1e3.png",
@@ -51,11 +51,11 @@
     "index.html": "/portfolio/index.html",
     "static/media/getFetch.cjs": "/portfolio/static/media/getFetch.40f37ddea2378391108f.cjs",
     "main.014daea7.css.map": "/portfolio/static/css/main.014daea7.css.map",
-    "main.31ece1b6.js.map": "/portfolio/static/js/main.31ece1b6.js.map",
+    "main.c02eb014.js.map": "/portfolio/static/js/main.c02eb014.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.014daea7.css",
-    "static/js/main.31ece1b6.js"
+    "static/js/main.c02eb014.js"
   ]
 }
