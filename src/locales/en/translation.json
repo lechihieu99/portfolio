@@ -106,7 +106,7 @@
             "playlist": "Playlist",
             "player": "Player",
             "how": "How to view this application?",
-            "warning": "Due to using ngrok.io for NodeJS Server, if there are any problems with the application (unable to load data), please visit the portfolio again and download the APK file again."
+            "warning": "Due to using ngrok.io for NodeJS Server, if there are any problems with the application (unable to load data), please press the circle arrow-up icon in the upper right corner of the Home page"
         },
         "project": "Projects"
     },

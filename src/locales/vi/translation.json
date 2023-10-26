@@ -106,7 +106,7 @@
             "playlist": "Playlist",
             "player": "Trình phát nhạc",
             "how": "Làm cách nào để trải nghiệm ứng dụng này?",
-            "warning": "Do sử dụng ngrok.io cho NodeJS Server nên nếu có bất kỳ vấn đề gì về ứng dụng (không load được data) thì vui lòng truy cập lại portfolio và tải lại file APK"
+            "warning": "Do sử dụng ngrok.io cho NodeJS Server nên nếu có bất kỳ vấn đề gì về ứng dụng (không load được data) thì vui lòng update lại ứng dụng bằng cách click vào icon mũi tên hướng lên ở góc bên phải phía trên của trang Khám phá"
         },
         "project": "Dự án"
     },
