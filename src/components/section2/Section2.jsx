@@ -3,8 +3,8 @@ import { ConfigProvider, Descriptions, Divider, Timeline } from 'antd';
 
 import CvEng from '../../asset/file/CVEng.pdf'
 import CvViet from '../../asset/file/CVViet.pdf'
-import CvEngVer from '../../asset/file/CVEng_Ver.pdf'
-import CvVietVer from '../../asset/file/CVViet_Ver.pdf'
+import CvEngVer from '../../asset/file/CVEngNew.pdf'
+import CvVietVer from '../../asset/file/CVVietNew.pdf'
 
 import './style.css'
 import { useEffect } from "react";
