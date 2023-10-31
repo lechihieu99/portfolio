@@ -23,6 +23,9 @@ const Section3 = ({ animate }) => {
                 <div style={{ color: '#eeeeee', lineHeight: 1.5 }}>
                     <b>{t('section3.technology')}</b> HTML, CSS, JavaScript, ReactJS, Redux Tool-kit, Tailwind CSS, Flowbite React, Git, NodeJS, ExpressJS, MySQL, Phosphoricon,...
                 </div>
+                <div style={{ color: 'yellow', lineHeight: 1.5 }}>
+                    <b>Server đang bị lỗi, không thể truy cập trang web (Server is failed, so you can not access website)</b>
+                </div>
                 <div style={{ color: '#e350a8', lineHeight: 1.5, paddingTop: 16 }}>
                     <b>URL: </b><a href="https://lechihieu99.github.io/afuproject" target="_blank" style={{ textDecoration: 'none', color: '#eeeeee' }}>lechihieu99.github.io/afuproject</a><br />
                     <br />
@@ -143,6 +146,9 @@ const Section3 = ({ animate }) => {
                 </div>
                 <div style={{ color: '#eeeeee', lineHeight: 1.5 }}>
                     <b>{t('section3.technology')}</b> JavaScript, React Native, Redux Tool-kit, NodeJS, ExpressJS, MySQL, Expo Icons,...
+                </div>
+                <div style={{ color: 'yellow', lineHeight: 1.5 }}>
+                    <b>Server đang bị lỗi, không thể truy cập trang web (Server is failed, so you can not access website)</b>
                 </div>
                 <div style={{ color: '#e350a8', lineHeight: 1.5, paddingTop: 16 }}>
                     <b>{t('section3.tab5.how')} </b>
