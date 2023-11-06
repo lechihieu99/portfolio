@@ -37,7 +37,7 @@ const MenuComponents = ({ current, setCurrent, handleChange, onChange }) => {
     useEffect(() => {
         const audio = document.getElementById('music')
         audio && play ? audio.play() : audio.pause()
-        audio.volume = 0.03
+        audio.volume = 0.2
     }, [play])
 
     useEffect(() => {
