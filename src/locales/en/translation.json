@@ -12,7 +12,7 @@
         "scroller": {
             "line1": "I'm Hieu",
             "line2": "My full name is Le Chi Hieu",
-            "line3": "Front-end Developer Fresher (ReactJS)",
+            "line3": "Front-end Developer Fresher (ReactJS + NodeJS)",
             "line4": "University of Science - HCM"
         }
     },
@@ -48,7 +48,7 @@
             },
             "key8": {
                 "label": "Position",
-                "children": "Front-end Developer Fresher (ReactJS)"
+                "children": "Front-end Developer Fresher (ReactJS + NodeJS)"
             }
         },
         "text": "I grew up in a poor farmer family, trying every day to pursue my dream path despite many difficulties. After I completed 12 years of school, I put my college dream on hold because I didn't have enough money to cover my living expenses. With my own efforts, I returned to college after 1 year. I started college with a limited amount of knowledge, which led to many difficulties for me to adapt. With my own efforts, I overcame that stage and found a direction for myself, which is to become a Front-end Developer (ReactJS) and am continuing to improve, aiming for a Full-Stack. Developer. I personally feel that I am not the best, but I can guarantee that I can become the most adaptable person.",

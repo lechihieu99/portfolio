@@ -65,7 +65,7 @@ const Section2 = ({ animate }) => {
     ];
     return (
         <div className={`${animate ? "activeSection2" : "notActiveSection2"}`} id="about" style={{ width: '100%', paddingTop: 80, display: 'flex', flexDirection: 'column', justifyContent: 'center', transition: 'all 1s ease-in-out' }}>
-            <div className="divStyle" style={{ width: '100%', border: '1px solid rgba(255, 255, 255, 0.222)', borderRadius: '10px', padding: '32px', backgroundColor: 'rgba(255, 255, 255, 0.074)', backdropFilter: 'blur(20px)' }}>
+            <div className="divStyle" style={{ width: '100%', border: '1px solid rgba(255, 255, 255, 0.422)', borderRadius: '10px', padding: '32px', backgroundColor: 'rgba(0, 0, 0, 0.345)', backdropFilter: 'blur(20px)' }}>
 
                 <Descriptions contentStyle={{ color: '#eeeeee' }} labelStyle={{ color: '#bdbdbd' }} title={(<div style={{ color: '#EEEEEE' }}>{t('section2.title')}</div>)} items={items} />
 

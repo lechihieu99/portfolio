@@ -7,11 +7,13 @@ import { useTranslation } from 'react-i18next';
 import i18n from '../../translation/i18n';
 import { useEffect } from 'react';
 
+import ChristmasAudio from '../../asset/file/Christmas.mp3'
+import Santa from '../../asset/icon/santa.gif'
 const { Text } = Typography
 
 
 const menuStyle = {
-    background: 'black',
+    backgroundColor: '#333333',
     color: '#eeeeee',
     width: '100%',
     display: 'flex',
@@ -24,10 +26,37 @@ const MenuComponents = ({ current, setCurrent, handleChange, onChange }) => {
 
     const [items, setItems] = useState()
 
+    const [play, setPlay] = useState(false)
+
     useEffect(() => {
         window.addEventListener("resize", () => {
             setWidth(window.innerWidth)
         })
+    }, [])
+
+    useEffect(() => {
+        const audio = document.getElementById('music')
+        audio && play ? audio.play() : audio.pause()
+        audio.volume = 0.03
+    }, [play])
+
+    useEffect(() => {
+        const audio = document.getElementById('music')
+        audio.addEventListener('ended', () => {
+            setPlay(false)
+            setTimeout(() => {
+                setPlay(true)
+            }, 1000)
+        })
+
+        return () => {
+            audio.removeEventListener('ended', () => {
+                setPlay(false)
+                setTimeout(() => {
+                    setPlay(true)
+                }, 1000)
+            })
+        }
     }, [])
 
     useEffect(() => {
@@ -123,12 +152,16 @@ const MenuComponents = ({ current, setCurrent, handleChange, onChange }) => {
                 }
             }}
         >
+            <audio autoPlay id='music' >
+                <source src={ChristmasAudio} type="audio/mpeg" />
+                Your browser does not support the audio tag.
+            </audio>
             <Row>
                 <Col span={6}>
                     <Space align='center' style={{ width: '100%', height: '100%' }}>
                         {/* <Text style={{ color: '#e350a8' }}>ABC</Text> */}
-                        <Typography.Title level={window.innerWidth < 800 ? 5 : 3} style={{ margin: 0, color: '#e350a8' }}>
-                            LECHIHIEU
+                        <Typography.Title level={window.innerWidth < 800 ? 5 : 2} style={{ margin: 0, color: '#fff', fontWeight: 'bold', textShadow: '#e350a8 1px 0 5px' }}>
+                            <span onClick={() => setPlay(!play)} style={{ cursor: 'pointer' }}>LECHIHIEU <img className="imageGift" src={Santa} style={{ borderRadius: 20 }} /></span>
                         </Typography.Title>
                     </Space>
                 </Col>

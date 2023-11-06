@@ -13,6 +13,21 @@ html {
     font-weight: bold !important;
 }
 
+.imageGift {
+    transition: ease-in-out;
+    animation: animateGift 4s linear infinite ;
+}
+
+@keyframes animateGift {
+    0% {
+        box-shadow: rgba(255, 255, 0, 0.7) 0px 2px 4px;
+    }
+
+    50% {
+        box-shadow: rgba(255, 255, 0, 0.7) 0px 2px 15px;
+    }
+}
+
 @media (max-width: 600px) { 
 .ant-layout-header {
     padding: 0 5px !important;

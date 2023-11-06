@@ -115,17 +115,17 @@ const Section4 = ({ animate }) => {
     ]
     return (
         <>
-            <div id="skill" style={{ width: '100%', height: '100vh', paddingTop: window.innerWidth < 1000 ? 128 : 0 }}>
+            <div id="skill" style={{ width: '100%', maxHeight: '200vh', paddingTop: window.innerWidth < 1000 ? 128 : 0 }}>
                 {window.innerWidth < 1000 ? (
                     <Row gutter={[16, 24]}>
                         <Col span={24}>
                             <div className={`${animate.animate1 ? "mobileActive1Section4" : "mobileNotActive1Section4"}`} style={{ width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: 48, transition: 'all 1s ease-in-out' }}>
-                                <Typography.Title level={window.innerWidth < 1080 ? 2 : 1} style={{ margin: 0, color: '#e6f4ff' }}>
+                                <Typography.Title level={window.innerWidth < 1080 ? 2 : 1} style={{ margin: 0, color: '#fff', fontWeight: 'bold', textShadow: '#e350a8 1px 0 5px' }}>
                                     {t('section4.mainSkill')}
 
                                 </Typography.Title>
                                 <div style={{ width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: window.innerWidth < 500 ? 24 : 48 }}>
-                                    {data.map((item, idx) => idx <= 4 && (
+                                    {data.map((item, idx) => idx <= 2 && (
                                         <div>
                                             <Tooltip color="rgba(156, 156, 156, 0.466)" title={item.item}>
 
@@ -143,7 +143,25 @@ const Section4 = ({ animate }) => {
 
                                 </div>
                                 <div style={{ width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: window.innerWidth < 500 ? 24 : 32 }}>
-                                    {data.map((item, idx) => idx > 4 && (
+                                    {data.map((item, idx) => idx > 2 && idx <= 5 && (
+                                        <div>
+                                            <Tooltip color="rgba(156, 156, 156, 0.466)" title={item.item}>
+
+                                                <button className="Btn">
+                                                    <span className="svgContainer">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" fill={item.fill} x="0px" y="0px" viewBox="0 0 50 50" width={window.innerWidth < 1080 ? "2.2em" : "3em"} height={window.innerWidth < 1080 ? "2.2em" : "3em"}>
+                                                            <path fillRule="evenodd" d={item.path}></path>
+                                                        </svg>
+                                                    </span>
+                                                    <span className="BG" style={{ background: `${item.background}` }}></span>
+                                                </button>
+                                            </Tooltip>
+                                        </div>
+                                    ))}
+
+                                </div>
+                                <div style={{ width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: window.innerWidth < 500 ? 24 : 48 }}>
+                                    {data.map((item, idx) => idx > 5 && (
                                         <div>
                                             <Tooltip color="rgba(156, 156, 156, 0.466)" title={item.item}>
 
@@ -165,7 +183,7 @@ const Section4 = ({ animate }) => {
                         <Col span={24}>
                             <div style={{ width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: 32 }}>
                                 <div className={`${animate.animate2 ? "mobileActive2Section4" : "mobileNotActive2Section4"}`} style={{ width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: 44, transition: 'all 1s ease-in-out' }}>
-                                    <Typography.Title level={3} style={{ margin: 0, color: '#e6f4ff' }}>
+                                    <Typography.Title level={3} style={{ margin: 0, color: '#fff', fontWeight: 'bold', textShadow: '#e350a8 1px 0 5px' }}>
                                         {t('section4.otherSkill')}
                                     </Typography.Title>
                                     <div style={{ width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: 32 }}>
@@ -186,7 +204,7 @@ const Section4 = ({ animate }) => {
 
                                 </div>
                                 <div className={`${animate.animate3 ? "mobileActive3Section4" : "mobileNotActive3Section4"}`} style={{ width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: 44, transition: 'all 1s ease-in-out' }}>
-                                    <Typography.Title level={3} style={{ margin: 0, color: '#e6f4ff' }}>
+                                    <Typography.Title level={3} style={{ margin: 0, color: '#fff', fontWeight: 'bold', textShadow: '#e350a8 1px 0 5px' }}>
                                         {t('section4.softSkill')}
                                     </Typography.Title>
                                     <div style={{ width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: 32 }}>
@@ -214,7 +232,7 @@ const Section4 = ({ animate }) => {
                     <Row>
                         <Col span={12}>
                             <div className={`${animate.animate1 ? "active1Section4" : "notActive1Section4"}`} style={{ width: '100%', height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: 64, transition: 'all 1s ease-in-out' }}>
-                                <Typography.Title level={window.innerWidth < 1080 ? 2 : 1} style={{ margin: 0, color: '#e6f4ff' }}>
+                                <Typography.Title level={window.innerWidth < 1080 ? 2 : 1} style={{ margin: 0, color: '#fff', fontWeight: 'bold', textShadow: '#e350a8 1px 0 5px' }}>
                                     {t('section4.mainSkill')}
 
                                 </Typography.Title>
@@ -259,7 +277,7 @@ const Section4 = ({ animate }) => {
                         <Col span={12}>
                             <div style={{ width: '100%', height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: 32 }}>
                                 <div className={`${animate.animate2 ? "active2Section4" : "notActive2Section4"}`} style={{ width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: 44, transition: 'all 1s ease-in-out' }}>
-                                    <Typography.Title level={3} style={{ margin: 0, color: '#e6f4ff' }}>
+                                    <Typography.Title level={3} style={{ margin: 0, color: '#fff', fontWeight: 'bold', textShadow: '#e350a8 1px 0 5px' }}>
                                         {t('section4.otherSkill')}
                                     </Typography.Title>
                                     <div style={{ width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: 32 }}>
@@ -280,7 +298,7 @@ const Section4 = ({ animate }) => {
 
                                 </div>
                                 <div className={`${animate.animate3 ? "active3Section4" : "notActive3Section4"}`} style={{ width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: 44, transition: 'all 1s ease-in-out' }}>
-                                    <Typography.Title level={3} style={{ margin: 0, color: '#e6f4ff' }}>
+                                    <Typography.Title level={3} style={{ margin: 0, color: '#fff', fontWeight: 'bold', textShadow: '#e350a8 1px 0 5px' }}>
                                         {t('section4.softSkill')}
                                     </Typography.Title>
                                     <div style={{ width: '100%', display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center', gap: 32 }}>

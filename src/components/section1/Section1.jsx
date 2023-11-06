@@ -34,7 +34,7 @@ const Section1 = ({ setCurrent }) => {
                             </Avatar>
                         </div>
                     )}
-                    <Typography.Title level={1} style={{ margin: 0, color: '#e350a8', textAlign: 'left' }}>
+                    <Typography.Title level={1} style={{ margin: 0, textAlign: 'left', color: '#fff', fontWeight: 'bold', textShadow: '#e350a8 1px 0 5px' }}>
                         {t('section1.title')}
                     </Typography.Title>
                     <div className="scroller">
@@ -45,12 +45,12 @@ const Section1 = ({ setCurrent }) => {
                             {t('section1.scroller.line4')}
                         </span>
                     </div>
-                    <Typography.Title level={3} style={{ margin: 0, color: '#e350a8', textAlign: 'left', paddingTop: 12 }}>
+                    <Typography.Title level={3} style={{ margin: 0, textAlign: 'left', paddingTop: 12, color: '#fff', fontWeight: 'bold', textShadow: '#e350a8 1px 0 5px' }}>
                         {hour}:{minute < 10 ? `0${minute}` : minute}:{second < 10 ? `0${second}` : second}
                     </Typography.Title>
                     <Space >
                         <a href="#about" onClick={() => setCurrent('about')}>
-                            <ArrowCircleDown style={{ color: '#b8e7ea', cursor: 'pointer' }} className="iconDown" size={46} />
+                            <ArrowCircleDown style={{ color: '#fff', cursor: 'pointer' }} className="iconDown" size={46} />
                         </a>
                     </Space>
                 </div>

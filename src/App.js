@@ -4,7 +4,7 @@ import { Button, Col, Layout, Row, Space } from 'antd';
 import { Content, Footer, Header } from 'antd/es/layout/layout';
 import MenuComponents from './components/menu/Menu';
 import Section1 from './components/section1/Section1';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Background from './components/background/Background';
 import Section2 from './components/section2/Section2';
 import Section3 from './components/section3/Section3';
@@ -20,7 +20,7 @@ const headerStyle = {
   height: 64,
   paddingInline: 50,
   lineHeight: '64px',
-  backgroundColor: 'black',
+  backgroundColor: '#333333',
   position: 'fixed',
   width: '100%',
   top: 0,
@@ -67,7 +67,6 @@ function App() {
     animate2: false
   })
 
-
   useEffect(() => {
     window.addEventListener('scroll', () => {
       const height = window.innerHeight
@@ -92,7 +91,7 @@ function App() {
       if (skill.getBoundingClientRect().top < height / 2 + 100) {
         setSection4(true)
       }
-      if (contact.getBoundingClientRect().top < height / 2 + 100) {
+      if (contact.getBoundingClientRect().top < height / 2) {
         setSection5(true)
       }
     })
@@ -117,11 +116,11 @@ function App() {
 
       setTimeout(() => {
         setAnimateSection4({ animate1: true, animate2: true, animate3: false })
-      }, 500)
+      }, 300)
 
       setTimeout(() => {
         setAnimateSection4({ animate1: true, animate2: true, animate3: true })
-      }, 1000)
+      }, 600)
     }
   }, [section4])
 
@@ -131,7 +130,7 @@ function App() {
 
       setTimeout(() => {
         setAnimateSection5({ animate1: true, animate2: true })
-      }, 500)
+      }, 300)
     }
   }, [section5])
 
@@ -174,9 +173,9 @@ function App() {
 
   return (
     <>
+
       <Background />
       <div className="App-header" style={{ width: '100%' }}>
-
 
         <Layout>
           <Header style={headerStyle}>
