@@ -42,6 +42,13 @@ import MusicChart1 from '../asset/image/Music_Chart1.jpg'
 import MusicChart2 from '../asset/image/Music_Chart2.jpg'
 import QR from '../asset/image/QRMusic.png'
 
+import TheStars1 from '../asset/image/TheStars_Page1.png'
+import TheStars2 from '../asset/image/TheStars_Page2.png'
+import TheStars3 from '../asset/image/TheStars_Page3.png'
+import TheStars4 from '../asset/image/TheStars_Page4.png'
+import TheStars5 from '../asset/image/TheStars_Page5.png'
+
+
 import MotionM5 from '../asset/image/MotionM5.png'
 
 export const images = {
@@ -90,5 +97,11 @@ export const images = {
     MusicPlaylist: MusicPlaylist,
     MusicSearch1: MusicSearch1,
     MusicSearch2: MusicSearch2,
-    QRMusic: QR
+    QRMusic: QR,
+
+    TheStars1: TheStars1,
+    TheStars2: TheStars2,
+    TheStars3: TheStars3,
+    TheStars4: TheStars4,
+    TheStars5: TheStars5
 }

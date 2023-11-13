@@ -108,6 +108,9 @@
             "how": "Làm cách nào để trải nghiệm ứng dụng này?",
             "warning": "Do sử dụng ngrok.io cho NodeJS Server nên nếu có bất kỳ vấn đề gì về ứng dụng (không load được data) thì vui lòng update lại ứng dụng bằng cách click vào icon mũi tên hướng lên ở góc bên phải phía trên của trang Khám phá"
         },
+        "tab6": {
+            "introduce": "1 trang web để chữa lành tâm hồn. Đến với trang web, người dùng có thể gửi gắm các cảm xúc như vui, buồn, mong ước đến với các vì sao trên trời. Các vì sao sẽ lắng nghe bạn và giúp bạn cảm thấy thoải mái"
+        },
         "project": "Dự án"
     },
     "section4": {

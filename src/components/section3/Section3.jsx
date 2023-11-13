@@ -16,6 +16,142 @@ const Section3 = ({ animate }) => {
         // console.log(key);
     };
 
+    const Tab6 = () => {
+        return (
+            <div style={{ textAlign: 'left', borderBottom: '1px solid rgba(255, 255, 255, 0.454)', borderRight: '1px solid rgba(255, 255, 255, 0.454)', borderLeft: '1px solid rgba(255, 255, 255, 0.454)', borderRadius: '10px', padding: 16, backgroundColor: 'rgba(0,0,0,0.5)' }}>
+                <div style={{ color: '#eeeeee', lineHeight: 1.5 }}>
+                    {t('section3.tab6.introduce')}
+                </div>
+                <div style={{ color: '#eeeeee', lineHeight: 1.5 }}>
+                    <b>{t('section3.technology')}</b>  Javascript, NextJS, ReactJS Web Server NodeJS, ExpressJS, MySQL, Tailwind CSS,…
+                </div>
+                {WIDTH > 800 ? (
+                    <Row style={{ margin: '50px 16px 0 16px', justifyContent: 'center', alignItems: 'center' }}>
+                        <Col span={8}>
+                            <div style={{ color: '#e350a8', lineHeight: 1.5, paddingBottom: 16, textAlign: 'center' }}>
+                                <b>URL: </b><a href="https://thestars.vercel.app" target="_blank" style={{ textDecoration: 'none', color: '#eeeeee' }}>thestars.vercel.app</a><br />
+                                <br />
+                                <div style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                                    <div style={{ background: '#fff', width: 'fit-content' }}>
+                                        <QRCode value="https://thestars.vercel.app" />
+                                    </div>
+                                </div>
+                            </div>
+                        </Col>
+                        <Col span={16}>
+                            <Carousel
+                                style={{ borderRadius: 10, overflow: 'hidden' }}
+                                autoplay>
+                                <Image
+                                    width='100%'
+                                    src={images.TheStars1}
+                                />
+                                <Image
+                                    width='100%'
+                                    src={images.TheStars2}
+                                />
+                                <Image
+                                    width='100%'
+                                    src={images.TheStars3}
+                                />
+                                <Image
+                                    width='100%'
+                                    src={images.TheStars4}
+                                />
+                                <Image
+                                    width='100%'
+                                    src={images.TheStars5}
+                                />
+                            </Carousel>
+                        </Col>
+                    </Row>
+                ) : (
+                    <>
+                        <div style={{ color: '#e350a8', lineHeight: 1.5, paddingTop: 16, paddingBottom: 16, textAlign: 'center' }}>
+                            <b>URL: </b><a href="https://lechihieu99.github.io/afuproject" target="_blank" style={{ textDecoration: 'none', color: '#eeeeee' }}>lechihieu99.github.io/afuproject</a><br />
+                            <br />
+                            <div style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                                <div style={{ background: '#fff', width: 'fit-content' }}>
+                                    <QRCode value="https://lechihieu99.github.io/afuproject" />
+                                </div>
+                            </div>
+                        </div>
+                        <Carousel
+                            style={{ borderRadius: 10, overflow: 'hidden' }}
+                            autoplay>
+                            <Image
+                                width='100%'
+                                src={images.AfULogin}
+                            />
+                            <Image
+                                width='100%'
+                                src={images.AfUHome}
+                            />
+                            <Image
+                                width='100%'
+                                src={images.AfUGame}
+                            />
+                            <div>
+                                <Image
+                                    width='100%'
+                                    src={images.AfUMusic1}
+                                />
+                            </div>
+                            <div>
+                                <Image
+                                    width='100%'
+                                    src={images.AfUMusic2}
+                                />
+                            </div>
+                            <div>
+                                <Image
+                                    width='100%'
+                                    src={images.AfUCommunity1}
+                                />
+                            </div>
+                            <div>
+                                <Image
+                                    width='100%'
+                                    src={images.AfUCommunity2}
+                                />
+                            </div>
+                            <div style={{ display: 'flex' }}>
+                                <Image
+                                    width="25%"
+                                    src={images.AfULoginMobile}
+                                />
+                                <Image
+                                    width="25%"
+                                    src={images.AfUHomeMobile}
+                                />
+                                <Image
+                                    width="25%"
+                                    src={images.AfUGameMobile}
+                                />
+                                <Image
+                                    width="25%"
+                                    src={images.AfUMusic1Mobile}
+                                />
+                            </div>
+                            <div style={{ display: 'flex' }}>
+                                <Image
+                                    width="25%"
+                                    src={images.AfUMusic2Mobile}
+                                />
+                                <Image
+                                    width="25%"
+                                    src={images.AfUCommunity1Mobile}
+                                />
+                            </div>
+                        </Carousel>
+                    </>
+                )}
+
+
+            </div>
+        )
+    }
+
     const Tab1 = () => {
         return (
             <div style={{ textAlign: 'left', borderBottom: '1px solid rgba(255, 255, 255, 0.454)', borderRight: '1px solid rgba(255, 255, 255, 0.454)', borderLeft: '1px solid rgba(255, 255, 255, 0.454)', borderRadius: '10px', padding: 16, backgroundColor: 'rgba(0,0,0,0.5)' }}>
@@ -491,26 +627,31 @@ const Section3 = ({ animate }) => {
     const items = [
         {
             key: '1',
+            label: 'The Stars',
+            children: <Tab6 />,
+        },
+        {
+            key: '2',
             label: 'AfU - All for U (Entertainment Website)',
             children: <Tab1 />,
         },
         {
-            key: '2',
+            key: '3',
             label: 'Mini Music App with React Native',
             children: <Tab5 />,
         },
         {
-            key: '3',
+            key: '4',
             label: 'Cyborg Website Template',
             children: <Tab2 />,
         },
         {
-            key: '4',
+            key: '5',
             label: 'My Favourite App',
             children: <Tab3 />,
         },
         {
-            key: '5',
+            key: '6',
             label: 'MotionM5 Template',
             children: <Tab4 />,
         },
@@ -531,7 +672,7 @@ const Section3 = ({ animate }) => {
                 }}
             >
                 <Typography.Title level={5} style={{ margin: 0, color: '#fff', fontWeight: 'bold', textShadow: '#e350a8 1px 0 5px' }}>
-                    5 {t('section3.project')}
+                    6 {t('section3.project')}
                 </Typography.Title>
 
                 <Tabs moreIcon={<DotsThreeVertical color="#fff" size={20} />} defaultActiveKey="1" items={items} onChange={onChange} />

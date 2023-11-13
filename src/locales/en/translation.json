@@ -108,6 +108,9 @@
             "how": "How to view this application?",
             "warning": "Due to using ngrok.io for NodeJS Server, if there are any problems with the application (unable to load data), please press the circle arrow-up icon in the upper right corner of the Home page"
         },
+        "tab6": {
+            "introduce": "1 Website to heal the soul. Coming to the website, users can send their emotions such as joy, sadness, and wishes to reach the stars in the sky. The stars will listen to those feelings and help you feel more comfortable"
+        },
         "project": "Projects"
     },
     "section4": {
