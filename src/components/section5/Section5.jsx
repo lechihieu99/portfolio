@@ -38,7 +38,7 @@ const Section5 = ({ animate }) => {
                 fullname: name,
                 message: message
             }
-            axios.post('https://6ef5-27-64-140-249.ngrok-free.app/api/send-email', payload)
+            axios.post('https://8641-115-78-15-113.ngrok-free.app/api/send-email', payload)
 
             setMess(t('section5.messSuccess'))
             setTimeout(() => {
