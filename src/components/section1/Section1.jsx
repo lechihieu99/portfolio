@@ -34,6 +34,11 @@ const Section1 = ({ setCurrent }) => {
                             </Avatar>
                         </div>
                     )}
+                    <Typography.Title level={3} style={{ margin: 0, textAlign: 'left', color: '#fff', fontWeight: 'bold', textShadow: '#e350a8 1px 0 5px' }}>
+                        New Portfolio {`->`} <a href="https://portfolio-lechihieu99.vercel.app/" style={{ color: 'white' }}>
+                            portfolio-lechihieu99.vercel.app
+                        </a>
+                    </Typography.Title>
                     <Typography.Title level={1} style={{ margin: 0, textAlign: 'left', color: '#fff', fontWeight: 'bold', textShadow: '#e350a8 1px 0 5px' }}>
                         {t('section1.title')}
                     </Typography.Title>
